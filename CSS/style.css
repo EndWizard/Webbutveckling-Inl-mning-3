@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+.front{
+  margin-top: 48px;
+  width: 100%;
+ background-image: url("Photos\paint.jpg");
+  height: 100vh;
+  display: flex;
+}
+#about_us{
+
+}
+
 .topnav {
   position: fixed;
   width: 100%;
@@ -42,7 +53,6 @@ background-color: black;
 }
 
 footer{
-  position: absolute;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -50,7 +60,6 @@ footer{
   font-size: 10px;
   background-color: #6c757d;
   color: #adb5bd;
-  bottom: 0%;
 }
 footer p {
   margin: 3px;
@@ -74,7 +83,7 @@ footer p {
 }
 
 .slideshow-container {
-  top: 8vh;
+
   max-width: 88%;
   position: relative;
   margin: auto;
