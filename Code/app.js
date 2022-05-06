@@ -6,7 +6,7 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  let slides = document.getElementsByClassName("Slides");
+  const slides = document.getElementsByClassName("Slides");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (let i = 0; i < slides.length; i++) {

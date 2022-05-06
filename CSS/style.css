@@ -1,20 +1,61 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lobster';
     box-sizing: border-box;
 }
 
-.front{
+.front {
   margin-top: 48px;
   width: 100%;
- background-image: url("Photos\paint.jpg");
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
-#about_us{
+.about_us{
+  background-image: url("../Photos/galaxy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.front h1{
+  margin-top: 4%;
+  margin-bottom: 3%;
+  width: 100%;
+text-align: center;
+  font-size: 75px;
+}
 
+.about_us section{
+  text-align: right;
+  width: 46%;
 }
+.items{
+  background: rgb(0,124,53);
+  background: linear-gradient(241deg, rgba(0,124,53,1) 0%, rgba(0,40,124,1) 100%);
+  color: snow;
+}
+.items table{
+  width: 98%;
+  border: 3px solid white;
+  border-style: ridge;
+}
+.items table th{
+  border: 3px solid white;
+  border-style: ridge;
+}
+
+.about_us{
+  background-image: url("../Photos/chaos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+
 
 .topnav {
   position: fixed;
@@ -23,7 +64,6 @@
   background-color: white;
   overflow: hidden;
 }
-  
 
 .topnav a {
   float: left;
@@ -49,7 +89,7 @@ background-color: black;
 #logo{
   position: absolute;
   right: 20px;
-  height: 44px;
+  height: 100%;
 }
 
 footer{
@@ -78,7 +118,7 @@ footer p {
 .Slides h3 {
   font-size: 90px;
 }
-.Slides div{
+.Slides p{
   width: 50%;
 }
 
