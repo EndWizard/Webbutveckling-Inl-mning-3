@@ -8,23 +8,22 @@
     <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-    <main class="front">
-        <div class="container">
-            <form >
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Your last name..">
-          
-          
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" placeholder="Write something.."></textarea>
-          
-            <input type="submit" >
-            </form>
-        </div>
+    <main class="front contact-us">
+        <form>
+              <label for="contact-name">Name</label>
+              <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup="validateName()">
+              <span class="error-message" id="name-error"></span>
+
+              <label for="contact-email">Email address</label>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email.." onkeyup="validateEmail()">
+              <span class="error-message" id="email-error"></span>
+
+              <label for="contactMessage">Your Message</label>
+              <textarea class="form-control" rows="5" id="contact-message" name="message"  placeholder="Enter a brief message.." onkeyup="validateMessage()"></textarea>
+              <span class="error-message" id="message-error"></span>
+          <button onclick="return validateForm()" class="btn btn-default">Submit</button>
+          <span class="error-message" id="submit-error"></span>
+      </form>
 
 
 
@@ -45,5 +44,6 @@
         Piracy Policy - Terms of Service - Terms of Sale - Support
         </p>
     </footer>
+    <script src="Code/app.js"></script>
 </body>
 </html>
