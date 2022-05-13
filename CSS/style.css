@@ -39,10 +39,8 @@ text-align: center;
 }
 .items table{
   width: 98%;
-  border: 3px solid white;
-  border-style: ridge;
 }
-.items table th{
+.items table th,.items table{
   border: 3px solid white;
   border-style: ridge;
 }
@@ -60,6 +58,7 @@ text-align: center;
 
 }
 .contact-us form{
+  font-size: 20px;
   margin-top: 70px;
   background-color: rgba(213, 213, 213, 0.7);
   display: flex;
@@ -81,13 +80,18 @@ text-align: center;
   overflow: hidden;
 }
 
-.topnav a {
+.topnav a, .menu {
   float: left;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.menu{
+  background-color: lightgray;
+  display: none;
 }
   
 .topnav a:hover {
@@ -178,14 +182,24 @@ footer p {
 
 @media screen and (max-width: 600px) {
   .topnav{
+    top: -192px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    transition: 1s; 
   }
-  .topnav img {
+  .topnav a, .menu{
+    width: 100%;
+    display: block;
+  }
+  .topnav img{
     display: none;
   }
-  .topnav a{
-    width: 25%;
+  .down{
+    top: 0px;
+  }
+  .front{
+    overflow: hidden;
   }
   .slideshow-container, .contact-us form{
     margin-top: 0;
@@ -195,5 +209,12 @@ footer p {
   .Slides, .prev, .next {
     border-radius: 0px;
   }
-
+  
+  .about_us section{
+    width: 95%;
+    display: none;
+  }
+  .about_us :last-child{
+    display: block;
+  }
 }
