@@ -7,7 +7,7 @@
 .front {
   margin-top: 48px;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -208,6 +208,9 @@ footer p {
   }
   .Slides, .prev, .next {
     border-radius: 0px;
+  }
+  .Slides{
+    min-height: 90vh;
   }
   
   .about_us section{
